@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace CasusV0._1
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
