@@ -16,4 +16,3 @@ namespace CasusV0._1.Models
 
     }
 }
-

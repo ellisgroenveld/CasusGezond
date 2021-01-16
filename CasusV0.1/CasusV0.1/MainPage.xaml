@@ -1,7 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CasusV0._1.MainPage">
+             x:Class="CasusV0._1.MainPage" Title="Hi, @username">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="homeButton"/>
+        <ToolbarItem x:Name="settingsButton"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Orientation="Vertical" Padding="50">
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="Red"/>
+            <Label Text="Your own progress" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="Cyan"/>
+            <Label Text="Goals for the day" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="LightGreen"/>
+            <Label Text="Which friends are doing well" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="Yellow"/>
+            <Label Text="Next game lvl info" FontSize="Medium"/>
+        </StackLayout>
+    </StackLayout>
 
 
 </ContentPage>

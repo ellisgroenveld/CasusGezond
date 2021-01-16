@@ -13,6 +13,8 @@ namespace CasusV0._1
         public MainPage()
         {
             InitializeComponent();
+            homeButton.IconImageSource = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://static.thenounproject.com/png/1407802-200.png") };
+            settingsButton.IconImageSource = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://icons-for-free.com/iconfiles/png/512/configuration+settings+icon-1320191040059302570.png") };
         }
     }
 }
