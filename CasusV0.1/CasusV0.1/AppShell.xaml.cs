@@ -9,16 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace CasusV0._1
 {
-public partial class LoginPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+public partial class AppShell : Shell
 {
-    public LoginPage()
+    public AppShell()
     {
         InitializeComponent();
     }
-
-        private void createaccountButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new AccountCreationPage());
-        }
-    }
+}
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CasusV0._1.FriendPage">
     <ScrollView>
-    <StackLayout>
+    <StackLayout  HorizontalOptions="Center">
         <StackLayout Orientation="Horizontal">
             <Button Text="Add friends"/>
             <Button Text="Manage friends"/>

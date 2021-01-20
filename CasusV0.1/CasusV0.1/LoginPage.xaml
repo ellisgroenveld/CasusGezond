@@ -10,6 +10,6 @@
             <Button Text="Forgot password?"/>
             <Button Text="Login"/>
         </StackLayout>
-        <Button Text="Create account?"/>
+        <Button x:Name="createaccountButton" Text="Create account?" Clicked="createaccountButton_Clicked"/>
     </StackLayout>
 </ContentPage>

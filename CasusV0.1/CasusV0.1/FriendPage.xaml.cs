@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using CasusV0._1.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,12 @@ public partial class FriendPage : ContentPage
         {
             base.OnAppearing();
             
-            /// using (SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation))
-            /// {
-            ///    connection.CreateTable<xxx>();
-            ///    var list = connection.Query<>("select * from xxx");
-            ///    friendsListView.ItemsSource = list;
-            /// }
+            using (SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation))
+            {
+                connection.CreateTable<Users>();
+                var list = connection.Query<Users>("select * from Users");
+                friendsListView.ItemsSource = list;
+            }
         }
     }
 }
