@@ -11,7 +11,7 @@ namespace CasusV0._1
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new LoginPage());
 
             DatabaseLocation = databaseLocation;
         }

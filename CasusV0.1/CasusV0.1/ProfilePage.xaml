@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CasusV0._1.ProfilePage">
-    <StackLayout>
+    <StackLayout HorizontalOptions="Center" Padding="30">
         <Label Text="Today" FontSize="Medium"/>
         <Label x:Name="todayStatsLabel"/>
-        <Label Text="Yesterdat" FontSize="Medium"/>
+        <Label Text="Yesterday" FontSize="Medium"/>
         <Label x:Name="yesterdayStatsLabel"/>
         <Label Text="Last Week" FontSize="Medium"/>
         <Label x:Name="lastweekStatsLabel"/>
